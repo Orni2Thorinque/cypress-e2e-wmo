@@ -20,7 +20,7 @@ const LOGIN_CONFIG = {
   },
   REQUEST: {
     USERNAME: "royant",
-    PASSWORD: "xxxxxx",
+    PASSWORD: "Pass82",
     URL_LOGIN: "**/authentication/login",
     URL_ENV: "**/rights/environments"
   }
@@ -94,6 +94,8 @@ context("Login Page", () => {
         "have.text",
         LOGIN_CONFIG.INPUT.USERNAME.REQUIRED
       );
+
+      cy.screenshot();
     });
 
     it("should set error on password", () => {
@@ -106,6 +108,8 @@ context("Login Page", () => {
         "have.text",
         LOGIN_CONFIG.INPUT.PASSWORD.REQUIRED
       );
+
+      cy.screenshot();
     });
   });
 

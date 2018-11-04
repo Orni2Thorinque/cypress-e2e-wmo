@@ -2,7 +2,8 @@
   "name": "mmo-e2e",
   "version": "0.0.1",
   "scripts": {
-    "start": "node_modules/.bin/cypress open"
+	"start": "node_modules/.bin/cypress open",
+	"record": "cypress run --record --key 78080c3f-d5ee-474d-8ec9-e18d7f9809dd"
   },
   "private": true,
   "dependencies": {
