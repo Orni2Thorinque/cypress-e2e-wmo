@@ -138,3 +138,8 @@ export const NGRX_STORE_LOGIN = {
     { envId: -1, permissions: ['ALERTS_VIEW', 'ZENDESK_TICKET', 'GLOBAL_VIEW', 'DASHBOARD_VIEW', 'DETAILED_VIEW', 'COMMANDS_GROUP2', 'COMMANDS_GROUP1', 'IN_MAINTENANCE', 'TAGS', 'SEARCH_WIZARD', 'ADMINISTRATION'] },
   ],
 };
+
+export const NGRX_STORE_ACTIVE_STATUS = { checkedStatus: { inClosingHours: true, inMaintenance: null } };
+export const NGRX_STORE_PATH = { selectedType: 'BROADSIGN', broadsignviewSelectedFolders: { selectedFolders: null, isFolderSelectionExclusion: null } };
+export const NGRX_STORE_GROUP = { groupviewSelectedGroups: null };
+export const NGRX_STORE_LIST = { listViewFilterButtons: null, criticalComponent: null };

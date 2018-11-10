@@ -1,9 +1,10 @@
 /// <reference types='Cypress'/>
 import { LOGIN_CONFIG } from '../../../fixtures/login.constants.js';
+import { ROUTES_URL } from '../../../fixtures/route-url.constants.js';
 
 context('Login Page', () => {
   beforeEach(() => {
-    cy.visit('https://monitoring-digital.jcdecaux.com/monitoring-ui/');
+    cy.visit(ROUTES_URL.LOGIN_VIEW);
 
     cy.get('input[type=email]').as('usernameInput');
     cy.get('input[type=password]').as('passwordInput');
@@ -80,15 +81,21 @@ context('Login Page', () => {
   describe('Log in app', () => {
     it('should get a token and envs', () => {
       cy.server();
-      cy.route('GET', LOGIN_CONFIG.REQUEST.URL_LOGIN).as('getToken');
-      cy.route('GET', LOGIN_CONFIG.REQUEST.URL_ENV).as('getEnv');
+      cy.route('GET', ROUTES_URL.AUTHENTICATION).as('getToken');
+      cy.route('GET', ROUTES_URL.ENVIRONMENTS).as('getEnv');
 
-      cy.login(LOGIN_CONFIG.REQUEST.USERNAME, LOGIN_CONFIG.REQUEST.PASSWORD, LOGIN_CONFIG.DOMAIN.FRANCE.LABEL);
+      cy.get('@usernameInput').type(LOGIN_CONFIG.REQUEST.USERNAME);
+      cy.get('@passwordInput').type(LOGIN_CONFIG.REQUEST.PASSWORD);
+      cy.get('@domainSelect').click();
+      cy.get('.mat-select-panel-done-animating')
+        .contains(LOGIN_CONFIG.REQUEST.DOMAIN)
+        .click();
+      cy.get('@submitButton').click({ force: true });
 
       cy.wait('@getToken')
         .its('status')
         .should('eq', 200);
-      cy.wait('@getEnv', { timeout: 60000 })
+      cy.wait('@getEnv', { timeout: 120000 })
         .its('status')
         .should('eq', 200);
     });

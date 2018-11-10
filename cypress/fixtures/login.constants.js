@@ -21,7 +21,6 @@ export const LOGIN_CONFIG = {
   REQUEST: {
     USERNAME: _HTTP_AUTH_PRD.USERNAME,
     PASSWORD: _HTTP_AUTH_PRD.PASS,
-    URL_LOGIN: '**/authentication/login',
-    URL_ENV: '**/rights/environments',
+    DOMAIN: _HTTP_AUTH_PRD.DOMAIN,
   },
 };

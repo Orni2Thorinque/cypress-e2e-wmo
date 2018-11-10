@@ -1,0 +1,37 @@
+[
+  {
+    "envId": 77,
+    "userRights": {
+      "userGeneralInfo": { "job": { "code": "UNKNOWN_JOB", "desc": "Unknown Role", "name": "Unknown Role", "isManager": false, "manager": false }, "login": "royant@fr.jcdecaux.org", "firstName": "Maël", "lastName": "Royant", "salutation": "MR" },
+      "parts": [
+        { "code": "ALERTS_VIEW", "desc": "Alerts on faulty assets", "name": "Alerts on faulty assets", "path": "\\ALERTS_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "ZENDESK_TICKET", "desc": "Able to send a mail with prefilled template to digital expert for further analysis", "name": "Opening a Zendesk ticket", "path": "\\ZENDESK_TICKET", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "GLOBAL_VIEW", "desc": "Global overview of your assets (selection of assets)", "name": "Global overview of your assets", "path": "\\GLOBAL_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "DASHBOARD_VIEW", "desc": "Statistics on your groups of assets (Dashboard page)", "name": "Statistics on your groups of assets", "path": "\\DASHBOARD_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "ALERTS_VIEW", "desc": "Alerts on faulty assets", "name": "Alerts on faulty assets", "path": "\\ALERTS_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "DETAILED_VIEW", "desc": "Detailed view of one asset (indicators and error messages)", "name": "Detailed view of one asset", "path": "\\DETAILED_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "ZENDESK_TICKET", "desc": "Able to send a mail with prefilled template to digital expert for further analysis", "name": "Opening a Zendesk ticket", "path": "\\ZENDESK_TICKET", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "GLOBAL_VIEW", "desc": "Global overview of your assets (selection of assets)", "name": "Global overview of your assets", "path": "\\GLOBAL_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "COMMANDS_GROUP2", "desc": "Commands on assets group 2", "name": "Commands on assets group 2", "path": "\\COMMANDS_GROUP2", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "COMMANDS_GROUP1", "desc": "Commands on assets group 1", "name": "Commands on assets group 1", "path": "\\COMMANDS_GROUP1", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "IN_MAINTENANCE", "desc": "Turning an asset in maintenance", "name": "Turning an asset in maintenance", "path": "\\IN_MAINTENANCE", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "TAGS", "desc": "Tag for an asset", "name": "Tag for an asset", "path": "\\TAGS", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "ALERTS_VIEW", "desc": "Alerts on faulty assets", "name": "Alerts on faulty assets", "path": "\\ALERTS_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "DASHBOARD_VIEW", "desc": "Statistics on your groups of assets (Dashboard page)", "name": "Statistics on your groups of assets", "path": "\\DASHBOARD_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "SEARCH_WIZARD", "desc": "Asset search wizard", "name": "SEARCH_WIZARD", "path": "\\SEARCH_WIZARD", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "DETAILED_VIEW", "desc": "Detailed view of one asset (indicators and error messages)", "name": "Detailed view of one asset", "path": "\\DETAILED_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "ZENDESK_TICKET", "desc": "Able to send a mail with prefilled template to digital expert for further analysis", "name": "Opening a Zendesk ticket", "path": "\\ZENDESK_TICKET", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } },
+        { "code": "GLOBAL_VIEW", "desc": "Global overview of your assets (selection of assets)", "name": "Global overview of your assets", "path": "\\GLOBAL_VIEW", "included": true, "helpLocation": null, "tabPath": null, "application": { "code": "MONITORING" } }
+      ],
+      "profiles": [
+        { "desc": "Third Party", "name": "Third Party", "applicationParts": null, "application": { "applicationIdId": null }, "code": "THIRD_PARTY" },
+        { "desc": "Field Agent", "name": "Field Agent", "applicationParts": null, "application": { "applicationIdId": null }, "code": "FIELD_AGENT" },
+        { "desc": "Commands Full", "name": "Commands Full", "applicationParts": null, "application": { "applicationIdId": null }, "code": "COMMANDS_FULL" },
+        { "desc": "Digital Expert", "name": "Digital Expert", "applicationParts": null, "application": { "applicationIdId": null }, "code": "DIGITAL_EXPERT" }
+      ],
+      "spheres": [{ "desc": null, "name": "77_ALL", "applicationParts": null, "application": null, "code": "CKPT_ALL" }],
+      "orgUnits": [{ "businessLocation": null, "effectEndDate": 5995810800000, "effectStartDate": 946681200000, "desc": "Business team to be completed", "name": "Users to be completed", "alias": "UTBC", "code": "USERS_TO_BE_COMPLETED", "children": [], "fathers": [], "displayPaths": [], "internalPaths": [], "orgUnitData": [], "associatedUsers": [], "type": "OTHER" }],
+      "perimeter": { "code": "V003", "name": "Total", "desc": "Visibility total" }
+    }
+  }
+]

@@ -1,5 +1,7 @@
 /// <reference types='Cypress'/>
-import { CHECKPAGE_CONFIG } from '../../../fixtures/chackpage.constants.js';
+import { CHECKPAGE_CONFIG } from '../../../fixtures/checkpage.constants';
+import { ROUTES_URL } from '../../../fixtures/route-url.constants';
+
 
 context('Listview Page', () => {
   beforeEach(() => {
@@ -10,7 +12,7 @@ context('Listview Page', () => {
     cy.viewport(1200, 800);
 
     cy.server();
-    cy.route('GET', CHECKPAGE_CONFIG.URL).as('getStatus');
+    cy.route('GET', ROUTES_URL.CHECKPAGE_VIEW).as('getStatus');
     cy.wait('@getStatus').then(response => {
       cy.get(':nth-child(1) > .mdl-list__item-secondary-content > .mdl-list__item-secondary-action > b')
         .invoke('text')
